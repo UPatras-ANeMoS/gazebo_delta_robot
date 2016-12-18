@@ -3,9 +3,9 @@ UPatras - Delta robot for gazebo
 
 ## Basic Usage
 
-1. If not already, install  and initialize ROS indigo desktop full (http://wiki.ros.org/indigo/Installation/Ubuntu).
+1.If not already, install  and initialize ROS indigo desktop full (http://wiki.ros.org/indigo/Installation/Ubuntu).
 
-2. Run the launch file:
+2.Run the launch file:
 
     $ roslaunch <path to call_delta.launch>
 
