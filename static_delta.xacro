@@ -11,7 +11,7 @@
   <xacro:property name="width_m" value="0.01" /> <!-- all links -->
   <xacro:property name="length_m" value="0.03" /> <!-- all links -->
 
-
+  <xacro:property name="distance_ground" value="2" /> <!-- distance from ground if there is not a uav-->
   <xacro:property name="distance_arm_uav" value="0.12" /> <!-- distance arm from uav-->
   <xacro:property name="mass_base" value="0.48" /> <!-- base mass-->
   <xacro:property name="mass_low_base" value="0.03" /> <!-- low base mass -->
@@ -61,7 +61,7 @@
 	 <child link="link_0"/>
 
       <axis xyz="0 0 0"/>
-      <origin xyz="0 0 ${-distance_arm_uav}" rpy="0 0 1.57"/>
+      <origin xyz="0 0 ${-distance_arm_uav+distance_ground}" rpy="0 0 1.57"/>
     </joint>
 	<gazebo reference="link_w_JOINT_w2">
 	    <physics>
